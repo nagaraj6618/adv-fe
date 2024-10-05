@@ -1,0 +1,46 @@
+/* Styling the container */
+.question-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f4f4f4;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Styling the header */
+ .question-container h2 {
+   text-align: center;
+   color: #333;
+   font-family: Arial, sans-serif;
+   margin-bottom: 20px;
+ }
+ 
+ /* Styling the list of questions */
+ .question-list {
+   list-style-type: none;
+   padding: 0;
+ }
+ 
+ /* Styling each question item */
+ .question-item {
+   background-color: #ffffff;
+   margin-bottom: 15px;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   font-family: 'Roboto', sans-serif;
+   color: #555;
+ }
+ 
+ /* Highlight the question and answer text */
+ .question-item strong {
+   color: #007bff;
+ }
+ 
+ /* Add hover effect for each question item */
+ .question-item:hover {
+   background-color: #f1f8ff;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ }
+ 

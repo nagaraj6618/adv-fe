@@ -1,0 +1,1 @@
+export const BE_URL = 'https://adv-be.vercel.app/api/v1';
