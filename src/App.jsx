@@ -1,5 +1,5 @@
 import './App.css';
-import Addcomponent from './Components/AddComponent/Addcomponent';
+import Addcomponent from './Components/AddComponent/Addcomponent.jsx';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import GetQuestionComponent from './Components/GetQuestionComponent/GetQuestionComponent';
 
