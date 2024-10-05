@@ -1,8 +1,10 @@
+import Addcomponent from './AddComponent';
 import './App.css';
 // import Addcomponent from './Components/AddComponent/Addcomponent';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import GetQuestionComponent from 'src/Components/GetQuestionComponent/GetQuestionComponent';
-import Addcomponent from 'src/Components/AddComponent/Addcomponent';
+import GetQuestionComponent from './GetQuestionComponent';
+
+
 
 function App() {
   return (

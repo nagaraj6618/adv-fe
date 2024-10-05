@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Addcomponent.css'; // Import the CSS file
 import axios from 'axios';
-import { BE_URL } from '../../config';
+import { BE_URL } from './config';
 const Addcomponent = () => {
    const [formData, setFormData] = useState({
       question: "",

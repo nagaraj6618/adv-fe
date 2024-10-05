@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './GetQuestionComponent.css'; // Import the CSS file
-import { BE_URL } from '../../config';
+import { BE_URL } from './config';
 
 const GetQuestionComponent = () => {
   const [data, setData] = useState([]);
