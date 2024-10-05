@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Addcomponent.css'; // Import the CSS file
 import axios from 'axios';
 import { BE_URL } from './config';
-const Addcomponent = () => {
+const CreateQuestion = () => {
    const [formData, setFormData] = useState({
       question: "",
       answer: ""
@@ -76,6 +76,6 @@ const Addcomponent = () => {
          }
       </div>
    );
-};
+}
 
-export default Addcomponent;
+export default CreateQuestion

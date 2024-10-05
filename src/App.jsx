@@ -1,9 +1,9 @@
-import Addcomponent from './AddComponent';
+
 import './App.css';
-// import Addcomponent from './Components/AddComponent/Addcomponent';
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import GetQuestionComponent from './GetQuestionComponent';
-
+import CreateQuestion from "./CreateQuestion"
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
         <div className="content">
           <Routes>
-            <Route path="/" element={<Addcomponent />} />
+            <Route path="/" element={<CreateQuestion/>} />
             <Route path="/all" element={<GetQuestionComponent />} />
           </Routes>
         </div>
