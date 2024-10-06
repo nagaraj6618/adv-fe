@@ -24,6 +24,7 @@ function App() {
   function checkLogginStatus() {
     const userName = sessionStorage.getItem("userName") === "Sec2025";
     const password = sessionStorage.getItem("password") === "2025";
+    setIsLoggedIn(false);
     if (userName && password) {
       setIsLoggedIn(true);
       console.log(true);
@@ -39,6 +40,7 @@ function App() {
   }
   const logOutHandler = () => {
     sessionStorage.clear();
+    checkLogginStatus();
   }
   useEffect(() => {
     checkLogginStatus();
