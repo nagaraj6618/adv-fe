@@ -25,7 +25,8 @@ const GetQuestionComponent = () => {
       <ul className="question-list">
         {data.map((item, index) => (
           <li key={index} className="question-item">
-            <strong>Question:</strong> {item.question} <br />
+            <strong>Id:</strong>{item.id}<br /><br />
+            <strong>Question:</strong> {item.question} <br /><br />
             <strong>Answer:</strong> {item.answer}
           </li>
         ))}
