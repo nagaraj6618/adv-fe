@@ -44,7 +44,7 @@ const GetQuestionComponent = () => {
         {data.map((item, index) => (
           <li key={index} className="question-item">
             <strong>Id:</strong>{item.id}<br /><br />
-            <strong>Question:</strong> {item.question} <br /><br />
+            <strong>Question:</strong><br/><br/> {item.question} <br /><br />
             <strong>Answer:</strong> {item.answer}<br/><br/>
             <button onClick={() => deleteHandler(item.id)} className='button btn'>Delete</button>
           </li>
