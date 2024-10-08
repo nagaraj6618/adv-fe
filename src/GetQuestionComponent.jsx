@@ -39,6 +39,7 @@ const GetQuestionComponent = () => {
   return (
     <div className="question-container">
       <h2>Questions and Answers</h2>
+      <h3>Total Question : {data.length}</h3>
       <ul className="question-list">
         {data.map((item, index) => (
           <li key={index} className="question-item">
