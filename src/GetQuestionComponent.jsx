@@ -15,6 +15,23 @@ const GetQuestionComponent = () => {
     }
   }
 
+  const deleteHandler = async(id) => {
+    try{
+      const deleteResponse = await axios.delete(`${BE_URL}/question/${id}`);
+      console.log(deleteResponse.data);
+      getAllData();
+    }
+    catch (error) {
+      console.log(error)
+      if(error.response){
+         alert(error.response.data.message);
+      }
+      else{
+         alert(error.message);
+      } 
+   }
+  }
+
   useEffect(() => {
     getAllData();
   }, []);
@@ -28,6 +45,7 @@ const GetQuestionComponent = () => {
             <strong>Id:</strong>{item.id}<br /><br />
             <strong>Question:</strong> {item.question} <br /><br />
             <strong>Answer:</strong> {item.answer}
+            <button onClick={() => deleteHandler(item.id)} className='button btn'>Delete</button>
           </li>
         ))}
       </ul>
