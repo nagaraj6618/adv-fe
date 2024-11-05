@@ -22,8 +22,8 @@ function App() {
     });
   };
   function checkLogginStatus() {
-    const userName = sessionStorage.getItem("userName") === "Sec2025";
-    const password = sessionStorage.getItem("password") === "2025";
+    const userName = sessionStorage.getItem("userName") === "FakeSec2025";
+    const password = sessionStorage.getItem("password") === "Fake2025";
     setIsLoggedIn(false);
     if (userName && password) {
       setIsLoggedIn(true);
