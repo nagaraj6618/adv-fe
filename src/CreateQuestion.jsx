@@ -57,7 +57,7 @@ const CreateQuestion = () => {
             </div>
             <div className="form-group">
                <label htmlFor="answer">Answer</label>
-               <input
+               <textarea
                   id="answer"
                   name="answer"
                   className="input"
